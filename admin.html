@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edu Media 24 - Admin</title>
+  <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/Y2s3-UAARJ1v4GQip9MJxf65Sh1Ac5aYrv7c8ptFis-fVguNyXesqYLUFZNIJ299uZJ05vECKPtXGlej9w" />
+  <style>
+    ::-webkit-scrollbar {
+    display: none;}
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.2rem;
+      color: #666;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-container">
+    <div class="loader" id="loader">Loading page...</div>
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycbzWrhDA0Y6WP348UGv2O6-VC78Huq_QP7jCKU5olL2GDhcn7Jjmcz0UagDAJXboMqESkA/exec" 
+      title="JNC Edukasi"
+      onload="document.getElementById('loader').style.display='none';"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>
