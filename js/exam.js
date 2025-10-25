@@ -8,10 +8,10 @@
   const questionList = document.getElementById("questionList");
   const logoutBtn = document.getElementById("logoutBtn");
   const examForm = document.getElementById("examForm");
-  const sheetURL = "https://opensheet.elk.sh/1G0fH5EpEBXbawKFa95a3AKEsv0ihnbE4m-WHbNSHKe8/Soal";
-  const homeSheetURL = "https://opensheet.elk.sh/1G0fH5EpEBXbawKFa95a3AKEsv0ihnbE4m-WHbNSHKe8/Home";
-  const jawabanSheetURL = "https://opensheet.elk.sh/1G0fH5EpEBXbawKFa95a3AKEsv0ihnbE4m-WHbNSHKe8/Jawaban";
-  const siswaSheetURL = "https://opensheet.elk.sh/1G0fH5EpEBXbawKFa95a3AKEsv0ihnbE4m-WHbNSHKe8/Siswa";
+  const sheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Soal";
+  const homeSheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Home";
+  const jawabanSheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Jawaban";
+  const siswaSheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Siswa";
   let scriptURL = "";
   let timerInterval;
   let examSubmitted = false;
@@ -641,4 +641,5 @@ document.addEventListener("keydown", function(e) {
   ) {
     e.preventDefault();
   }
+
 });
