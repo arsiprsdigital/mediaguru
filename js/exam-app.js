@@ -8,7 +8,7 @@
   const questionList = document.getElementById("questionList");
   const logoutBtn = document.getElementById("logoutBtn");
   const examForm = document.getElementById("examForm");
-  const sheetURL = "https://opensheet.elk.sh/1OxHPq3UOTjYdBVXWMdI3egVTnVaLpxiH0Zx0NLTZeDM/Soal";
+  const sheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Soal";
   let timerInterval;
   let examSubmitted = false;
   let remainingTime = 120 * 60; 
@@ -259,7 +259,7 @@
     timerDisplay.innerHTML = `Sisa Waktu: <strong>${m}:${s < 10 ? "0" + s : s}</strong>`;
   }
 
- const siswaSheetURL = "https://opensheet.elk.sh/1OxHPq3UOTjYdBVXWMdI3egVTnVaLpxiH0Zx0NLTZeDM/Siswa";
+ const siswaSheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Siswa";
   let siswaData = [];
   let globalPassword = "";
   fetch(siswaSheetURL)
@@ -293,7 +293,7 @@
     }
   });
 
- const jawabanSheetURL = "https://opensheet.elk.sh/1OxHPq3UOTjYdBVXWMdI3egVTnVaLpxiH0Zx0NLTZeDM/Jawaban";
+ const jawabanSheetURL = "https://opensheet.elk.sh/1bzoQJDDYcRw6Tz_xJT7k8Xa5dc-tBX4pcDGfG7Gh5DM/Jawaban";
   async function cekApakahSudahMengerjakan(nama, kelas) {
     try {
       const res = await fetch(jawabanSheetURL);
@@ -413,7 +413,7 @@
         }
       });
 
-      fetch("https://script.google.com/macros/s/AKfycbzFzdA7d8Xvllo3IoZ4ErUvS1ir9nWSSEB-gptFPbaFMx-tELF76raKyGd8YxV3Gixf/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbzyIrRolA9CG9wmV2C3bL_JdXK0dGdvC2B1wzAxgQhJCvYI_Sc7iEyhG4TWRRHbq02Y_Q/exec", {
         method: "POST",
         body: JSON.stringify(payload)
       })
@@ -503,4 +503,5 @@ document.addEventListener("keydown", function(e) {
   ) {
     e.preventDefault();
   }
+
 });
